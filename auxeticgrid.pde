@@ -1,15 +1,25 @@
 /**
- * <p>This is an attempt to generate a tessellating origami pattern
- * using verlet particles from the toxiclibs libraries.
- * </p>
+ * Copyright (c) 2011 Michael Whitman
  *
- * <p>Usage: Press X to restart the application. </p>
- * <p>Usage: Press W to toggle wireframe mode. </p>
- * <p>Usage: Press S to start and stop the simulation. </p>
- * <p>Usage: Press R to hide the springs that simulate folding.</p>
- * <p>Usage: Press O to outline the edges of the mesh.</p>
- * <p>Usage: Press L to lock the centre particle in place.</p> 
- * <p>Usage: Press V to remove all the particle velocity from the simulation.</p> 
+ *  This file is part of Auxeticgrid.
+ *
+ *  Auxeticgrid is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Auxeticgrid is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with Auxeticgrid.  If not, see <http://www.gnu.org/licenses/>.
+ *      
+ *  This contains modified code from the SoftBodySquare demo distributed
+ *  with the toxiclibs library.
+ *  These modifications were made between 03 Mar 2011 and 22 Mar 2011. The
+ *  original copyright notice is below:    
  */
 
 /* 
@@ -31,6 +41,31 @@
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
+ 
+/*
+ * Built with Processing (processing.org)
+ *
+ * To make this Processing sketch work, it requires Processing 2.0 Beta 8
+ * and the following libraries:
+ *   toxiclibs (available under GNU Lesser General Public License 2.1),
+ *   controlP5 (available under GNU Lesser General Public License 2.1), and
+ *   peasycam (https://github.com/jeffg2k/peasycam, available under the Apache License, v2.0).
+ *
+ *
+ * <p>This sketch generates a tessellating origami pattern known as miura-ori
+ * using verlet particles from the toxiclibs libraries.
+ * </p>
+ *
+ * <p>Usage:</p>
+ * <p>Press X to restart the application. </p>
+ * <p>Press W to toggle wireframe mode. </p>
+ * <p>Press S to start and stop the simulation. </p>
+ * <p>Press R to hide the springs that simulate folding.</p>
+ * <p>Press O to outline the edges of the mesh.</p>
+ * <p>Press L to lock the centre particle in place.</p> 
+ * <p>Press V to remove all the particle velocity from the simulation.</p> 
+ */
+
 
 import processing.opengl.*;
 
